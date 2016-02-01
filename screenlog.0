@@ -1,0 +1,525 @@
+[1;36m 
+ -------------- celery@Daniels-MacBook-Air.local v3.1.20 (Cipater)
+---- **** ----- 
+--- * ***  * -- Darwin-15.3.0-x86_64-i386-64bit
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         archive:0x1040fd1d0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.database:DatabaseBackend
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;31m[2016-02-01 12:52:58,290: ERROR/Worker-5] Process Worker-5
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/process.py", line 292, in _bootstrap
+    self.run()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 292, in run
+    self.after_fork()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 395, in after_fork
+    self.initializer(*self.initargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/concurrency/prefork.py", line 81, in process_initializer
+    app=app)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/trace.py", line 161, in build_tracer
+    backend = task.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/task.py", line 930, in backend
+    return self.app.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+[1;31m[2016-02-01 12:52:58,296: ERROR/Worker-3] Process Worker-3
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/process.py", line 292, in _bootstrap
+    self.run()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 292, in run
+    self.after_fork()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 395, in after_fork
+    self.initializer(*self.initargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/concurrency/prefork.py", line 81, in process_initializer
+    app=app)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/trace.py", line 161, in build_tracer
+    backend = task.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/task.py", line 930, in backend
+    return self.app.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+[1;31m[2016-02-01 12:52:58,307: ERROR/Worker-4] Process Worker-4
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/process.py", line 292, in _bootstrap
+    self.run()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 292, in run
+    self.after_fork()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 395, in after_fork
+    self.initializer(*self.initargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/concurrency/prefork.py", line 81, in process_initializer
+    app=app)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/trace.py", line 161, in build_tracer
+    backend = task.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/task.py", line 930, in backend
+    return self.app.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+[1;31m[2016-02-01 12:52:58,316: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 61] Connection refused.
+Trying again in 2.00 seconds...
+[0m
+[1;31m[2016-02-01 12:52:58,296: ERROR/Worker-2] Process Worker-2
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/process.py", line 292, in _bootstrap
+    self.run()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 292, in run
+    self.after_fork()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 395, in after_fork
+    self.initializer(*self.initargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/concurrency/prefork.py", line 81, in process_initializer
+    app=app)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/trace.py", line 161, in build_tracer
+    backend = task.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/task.py", line 930, in backend
+    return self.app.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+[1;31m[2016-02-01 12:52:58,365: ERROR/Beat] Process Beat
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/process.py", line 292, in _bootstrap
+    self.run()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 553, in run
+    self.service.start(embedded_process=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 470, in start
+    humanize_seconds(self.scheduler.max_interval))
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7Performing system checks...
+
+System check identified no issues (0 silenced).
+February 01, 2016 - 12:52:59
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[31;1mError: That port is already in use.
+[0m/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 512, in scheduler
+    return self.get_scheduler()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 507, in get_scheduler
+    lazy=lazy)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/utils/imports.py", line 53, in instantiate
+    return symbol_by_name(name)(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 358, in __init__
+    Scheduler.__init__(self, *args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 185, in __init__
+    self.setup_schedule()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 422, in setup_schedule
+    self.install_default_entries(self.schedule)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 190, in install_default_entries
+    not self.app.backend.supports_autoexpire:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+[1;31m[2016-02-01 12:53:00,338: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 61] Connection refused.
+Trying again in 4.00 seconds...
+[0m
+[1;31m[2016-02-01 12:53:05,439: ERROR/MainProcess] Unrecoverable error: RuntimeError(u"Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.",)
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/worker/__init__.py", line 206, in start
+    self.blueprint.start(self)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/bootsteps.py", line 374, in start
+    return self.obj.start()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/worker/consumer.py", line 279, in start
+    blueprint.start(self)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/worker/consumer.py", line 596, in start
+    c.update_strategies()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/worker/consumer.py", line 440, in update_strategies
+    app=self.app)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/trace.py", line 161, in build_tracer
+    backend = task.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/task.py", line 930, in backend
+    return self.app.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+
+              RabbitMQ 3.6.0. Copyright (C) 2007-2015 Pivotal Software, Inc.
+  ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+  ##  ##
+  ##########  Logs: /usr/local/var/log/rabbitmq/rabbit@localhost.log
+  ######  ##        /usr/local/var/log/rabbitmq/rabbit@localhost-sasl.log
+  ##########
+              Starting broker... completed with 10 plugins.
+[1;36m 
+ -------------- celery@Daniels-MacBook-Air.local v3.1.20 (Cipater)
+---- **** ----- 
+--- * ***  * -- Darwin-15.3.0-x86_64-i386-64bit
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         archive:0x103ffd1d0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.database:DatabaseBackend
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;31m[2016-02-01 12:56:56,260: ERROR/Beat] Process Beat
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/process.py", line 292, in _bootstrap
+    self.run()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 553, in run
+    self.service.start(embedded_process=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 470, in start
+    humanize_seconds(self.scheduler.max_interval))
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 512, in scheduler
+    return self.get_scheduler()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 507, in get_scheduler
+    lazy=lazy)
+  File "/Users/daniel[1;31m[2016-02-01 12:56:56,306: ERROR/Worker-2] Process Worker-2
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/process.py", line 292, in _bootstrap
+    self.run()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 292, in run
+    self.after_fork()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 395, in after_fork
+    self.initializer(*self.initargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/concurrency/prefork.py", line 81, in process_initializer
+    app=app)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/trace.py", line 161, in build_tracer
+    backend = task.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/task.py", line 930, in backend
+    return self.app.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+[1;31m[2016-02-01 12:56:56,327: ERROR/Worker-3] Process Worker-3
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/process.py", line 292, in _bootstrap
+    self.run()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 292, in run
+    self.after_fork()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 395, in after_fork
+    self.initializer(*self.initargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/concurrency/prefork.py", line 81, in process_initializer
+    app=app)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/trace.py", line 161, in build_tracer
+    backend = task.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/task.py", line 930, in backend
+    return self.app.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+/anaconda/envs/python2/lib/python2.7/site-packages/celery/utils/imports.py", line 53, in instantiate
+    return symbol_by_name(name)(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 358, in __init__
+    Scheduler.__init__(self, *args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 185, in __init__
+    self.setup_schedule()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 422, in setup_schedule
+    self.install_default_entries(self.schedule)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/beat.py", line 190, in install_default_entries
+    not self.app.backend.supports_autoexpire:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+[1;31m[2016-02-01 12:56:56,353: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 61] Connection refused.
+Trying again in 2.00 seconds...
+[0m
+[1;31m[2016-02-01 12:56:56,362: ERROR/Worker-4] Process Worker-4
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/process.py", line 292, in _bootstrap
+    self.run()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 292, in run
+    self.after_fork()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 395, in after_fork
+    self.initializer(*self.initargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/concurrency/prefork.py", line 81, in process_initializer
+    app=app)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/trace.py", line 161, in build_tracer
+    backend = task.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/task.py", line 930, in backend
+    return self.app.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+[1;31m[2016-02-01 12:56:56,385: ERROR/Worker-5] Process Worker-5
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/process.py", line 292, in _bootstrap
+    self.run()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 292, in run
+    self.after_fork()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/billiard/pool.py", line 395, in after_fork
+    self.initializer(*self.initargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/concurrency/prefork.py", line 81, in process_initializer
+    app=app)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/trace.py", line 161, in build_tracer
+    backend = task.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/task.py", line 930, in backend
+    return self.app.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+[1;31m[2016-02-01 12:56:58,365: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 61] Connection refused.
+Trying again in 4.00 seconds...
+[0m
+[1;31m[2016-02-01 12:57:03,464: ERROR/MainProcess] Unrecoverable error: RuntimeError(u"Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.",)
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/worker/__init__.py", line 206, in start
+    self.blueprint.start(self)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/bootsteps.py", line 374, in start
+    return self.obj.start()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/worker/consumer.py", line 279, in start
+    blueprint.start(self)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/worker/consumer.py", line 596, in start
+    c.update_strategies()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/worker/consumer.py", line 440, in update_strategies
+    app=self.app)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/trace.py", line 161, in build_tracer
+    backend = task.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/task.py", line 930, in backend
+    return self.app.backend
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 626, in backend
+    return self._get_backend()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/app/base.py", line 444, in _get_backend
+    self.loader)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 68, in get_backend_by_url
+    return get_backend_cls(backend, loader), url
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/backends/__init__.py", line 49, in get_backend_cls
+    cls = symbol_by_name(backend, aliases)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/kombu/utils/__init__.py", line 96, in symbol_by_name
+    module = imp(module_name, package=package, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/backends/database.py", line 7, in <module>
+    from ..models import TaskMeta, TaskSetMeta
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/djcelery/models.py", line 30, in <module>
+    class TaskMeta(models.Model):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/base.py", line 102, in __new__
+    "INSTALLED_APPS." % (module, name)
+RuntimeError: Model class djcelery.models.TaskMeta doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.[0m
+
+              RabbitMQ 3.6.0. Copyright (C) 2007-2015 Pivotal Software, Inc.
+  ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+  ##  ##
+  ##########  Logs: /usr/local/var/log/rabbitmq/rabbit@localhost.log
+  ######  ##        /usr/local/var/log/rabbitmq/rabbit@localhost-sasl.log
+  ##########
+              Starting broker... completed with 10 plugins.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 01, 2016 - 12:56:57
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.

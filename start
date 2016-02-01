@@ -1,0 +1,5 @@
+#!/bin/bash
+
+screen -S rabbit -L -d -m rabbitmq-server 
+screen -S server -L -d -m python manage.py runserver
+screen -S celery -L celery -A archive worker -B
