@@ -1,0 +1,32 @@
+/* sidebar navigation */
+.nav-sidebar {
+  margin-right: -11px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.nav-sidebar > li > a {
+  color: #8DAFCC;
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: x-large;
+  text-decoration: none;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* images in the vendor card columns */
+.centerImage {
+    width: 70%;
+    /* margin: 0 auto; */
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

@@ -6,12 +6,14 @@ from django.db import models
 class Node(models.Model):
 	guid = models.CharField(max_length=40)
 	last_seen = models.DateTimeField()
+	#first_seen = models.DateTimeField()
 
 	name = models.CharField(max_length=100)
 	handle = models.CharField(max_length=100)
 	short_description = models.CharField(max_length=200)
 	nsfw = models.BooleanField(default=0)
 	avatar_hash = models.CharField(max_length=40)
+	avatar = models.ImageField(upload_to='avatars', null=True)
 	
 	website = models.CharField(max_length=100)
 	email = models.CharField(max_length=100)
@@ -32,6 +34,15 @@ class Node(models.Model):
 
 	is_vendor = models.BooleanField(default=0)
 	is_moderator = models.BooleanField(default=0)
+
+	# override avatar image file on save
+	def save(self, *args, **kwargs):
+	    try:
+	        this = Node.objects.get(id=self.id)
+	        if this.avatar != self.avatar:
+	            this.avatar.delete()
+	    except: pass
+	    super(Node, self).save(*args, **kwargs)
 
 class Network(models.Model):
 	ip_address = models.GenericIPAddressField()
@@ -60,6 +71,7 @@ class Listing(models.Model):
 	store = models.ForeignKey(Store, on_delete=models.CASCADE)
 	contract_hash = models.CharField(max_length=40)
 	last_seen = models.DateTimeField()
+	#first_seen = models.DateTimeField()
 
 	title = models.CharField(max_length=100)
 	category = models.CharField(max_length=40)

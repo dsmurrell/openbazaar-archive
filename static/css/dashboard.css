@@ -1,0 +1,21 @@
+/*
+ * Sidebar
+ */
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+.nav-sidebar > li > a {
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}

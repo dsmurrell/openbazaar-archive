@@ -523,3 +523,2420 @@ February 01, 2016 - 12:56:57
 Django version 1.9.1, using settings 'archive.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
+
+              RabbitMQ 3.6.0. Copyright (C) 2007-2015 Pivotal Software, Inc.
+  ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
+  ##  ##
+  ##########  Logs: /usr/local/var/log/rabbitmq/rabbit@localhost.log
+  ######  ##        /usr/local/var/log/rabbitmq/rabbit@localhost-sasl.log
+  ##########
+              Starting broker... completed with 10 plugins.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:25:14
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[1;36m 
+ -------------- celery@Daniels-MacBook-Air.local v3.1.20 (Cipater)
+---- **** ----- 
+--- * ***  * -- Darwin-15.3.0-x86_64-i386-64bit
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         archive:0x103ffd210
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.database:DatabaseBackend
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m[0m
+[1;31m[2016-02-02 23:25:13,882: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 61] Connection refused.
+Trying again in 2.00 seconds...
+[0m
+[1;31m[2016-02-02 23:25:13,902: ERROR/Beat] beat: Connection error: [Errno 61] Connection refused. Trying again in 2.0 seconds...[0m
+[1;31m[2016-02-02 23:25:15,899: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [Errno 61] Connection refused.
+Trying again in 4.00 seconds...
+[0m
+[1;31m[2016-02-02 23:25:15,915: ERROR/Beat] beat: Connection error: [Errno 61] Connection refused. Trying again in 4.0 seconds...[0m
+/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[1;33m[2016-02-02 23:25:20,991: WARNING/MainProcess] /Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[0m
+[1;33m[2016-02-02 23:25:20,992: WARNING/MainProcess] celery@Daniels-MacBook-Air.local ready.[0m
+[m[02/Feb/2016 23:25:33] "GET /explore/ HTTP/1.1" 200 9207
+[0m[36m[02/Feb/2016 23:25:33] "GET /static/css/custom.css HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:25:33] "GET /static/img/3.png HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:25:33] "GET /static/img/1.png HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:25:33] "GET /static/img/2.png HTTP/1.1" 304 0
+[0mNot Found: /favicon.ico
+[33m[02/Feb/2016 23:25:33] "GET /favicon.ico HTTP/1.1" 404 2046
+[0m[1;33m[2016-02-02 23:25:33,140: WARNING/Worker-2] Read 42 nodes from nodes.json[0m
+[1;33m[2016-02-02 23:25:43,340: WARNING/Worker-2] 10 active profiles found.[0m
+[1;33m[2016-02-02 23:25:43,422: WARNING/Worker-2] 3 new profiles found.[0m
+[m[02/Feb/2016 23:26:09] "GET /admin/ HTTP/1.1" 200 7790
+[0m[36m[02/Feb/2016 23:26:10] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:10] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:10] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:10] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:10] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:10] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:10] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:10] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[0m[m[02/Feb/2016 23:26:11] "GET /admin/browser/node/ HTTP/1.1" 200 7421
+[0m[36m[02/Feb/2016 23:26:12] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:12] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:12] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:12] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:12] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:12] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:12] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:12] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[0m[m[02/Feb/2016 23:26:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[0m[36m[02/Feb/2016 23:26:12] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:12] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:12] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[0m[m[02/Feb/2016 23:26:17] "GET /admin/browser/node/11/change/ HTTP/1.1" 200 15932
+[0m[36m[02/Feb/2016 23:26:17] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:17] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:26:17] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[0m[m[02/Feb/2016 23:26:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[0m[36m[02/Feb/2016 23:26:17] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[0m[m[02/Feb/2016 23:26:17] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[0m[m[02/Feb/2016 23:26:17] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[0m[m[02/Feb/2016 23:26:35] "GET /admin/browser/node/ HTTP/1.1" 200 7421
+[0m[m[02/Feb/2016 23:26:56] "GET /admin/browser/node/13/change/ HTTP/1.1" 200 15796
+[0m[m[02/Feb/2016 23:26:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[0m[m[02/Feb/2016 23:27:03] "GET /admin/browser/node/ HTTP/1.1" 200 7421
+[0m[m[02/Feb/2016 23:27:05] "GET /admin/browser/node/12/change/ HTTP/1.1" 200 16062
+[0m[m[02/Feb/2016 23:27:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:29:01
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:29:46
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:29:52
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:29:56
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[m[02/Feb/2016 23:31:32] "GET /admin/browser/node/ HTTP/1.1" 200 7421
+[0m[m[02/Feb/2016 23:31:34] "GET /admin/browser/node/12/change/ HTTP/1.1" 200 16062
+[0m[m[02/Feb/2016 23:31:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[0m[m[02/Feb/2016 23:31:39] "GET /admin/browser/node/ HTTP/1.1" 200 7421
+[0m[m[02/Feb/2016 23:31:41] "GET /admin/browser/node/11/change/ HTTP/1.1" 200 15932
+[0m[m[02/Feb/2016 23:31:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[0mPerforming system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051561b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 96
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051641b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051561b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x10514e1b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x10514e1b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x10514e1b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051591b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1050591b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051511b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051671b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1050511b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051661b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1050501b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051661b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1052661b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1050501b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 97
+    http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+        ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051661b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 103
+    newdoc.save()
+    ^
+IndentationError: unexpected indent
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1050501b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 102
+    newdoc.save()
+    ^
+IndentationError: unexpected indent
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051661b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 104
+    newdoc.save()
+    ^
+IndentationError: unexpected indent
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051661b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 104
+    newdoc.save()
+    ^
+IndentationError: unexpected indent
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1050501b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6, in <module>
+    from tasks import scrape_profiles
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 106
+    newdoc.save()
+                ^
+IndentationError: unindent does not match any outer indentation level
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:48:47
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:48:52
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:48:55
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:49:01
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:49:13
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1050501b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6
+    from tasks import scrape_profiles, get_avatars()
+                                                  ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1050501b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6
+    from tasks import scrape_profiles, get_avatars()
+                                                  ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051581b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6
+    from tasks import scrape_profiles, get_avatars()
+                                                  ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051661b8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 20, in <module>
+    url(r'^explore/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar^C
+worker: Hitting Ctrl+C again will terminate all running tasks!
+
+worker: Warm shutdown (MainProcess)
+/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 6
+    from tasks import scrape_profiles, get_avatars()
+                                                  ^
+SyntaxError: invalid syntax
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:50:18
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /explore/
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 11, in index
+    get_avatars()
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 102, in get_avatars
+    for node in Node.objects.all():
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/query.py", line 258, in __iter__
+    self._fetch_all()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 323, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such column: browser_node.avatar
+[35;1m[02/Feb/2016 23:50:38] "GET /explore/ HTTP/1.1" 500 107404
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:50:56
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:53:17
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+drwasho node 1
+drwasho node 2
+Themes
+Derrick
+Buyer
+Johnny Freetrade
+BB Bot
+Vendor
+Test Tube
+Josh Transactin
+Badge Bazzar
+Rich
+ob9jbeee48y4d9529
+[u'http://localhost:18469/api/v1/profile?guid=7280afb871b2755da6bc825a25b4bceb8e80814d&hash=6045c0a8861f514711e7b192cd01644eb34807ef', u'http://localhost:18469/api/v1/profile?guid=6b60134fdadd59a24be0402117d36d172624df0a&hash=12478f48d9d8c93719af6e71d51f18b718411952', u'http://localhost:18469/api/v1/profile?guid=d6bda55cbfc79c3b1c69ec1ca03f93aa3906e28d&hash=2ea033d4b79844f1b93c7c291ff0f05e69265bed', u'http://localhost:18469/api/v1/profile?guid=4d4f8c61f946f1e911a0cc8cd305cc755de309d9&hash=', u'http://localhost:18469/api/v1/profile?guid=e18d689e84cee5d7757e3cded439bcc339bac85c&hash=', u'http://localhost:18469/api/v1/profile?guid=149c350243e3d03302240342a73489be39f96568&hash=b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544', u'http://localhost:18469/api/v1/profile?guid=220304767b8b19a61ad55b74ef3786a9f4cee014&hash=3adf1c6e16ef01d6b025fccc730526677e5634f9', u'http://localhost:18469/api/v1/profile?guid=7cafb4d4063b3246e07a8b8d56695f5cc2660960&hash=d1f0b891e3f4b85032c69ec69cbe885c944d4339', u'http://localhost:18469/api/v1/profile?guid=8f13991fa48b36e04917108d092e499947284427&hash=d99a183f6886e3e50b022ff7fad374cd55cda10b', u'http://localhost:18469/api/v1/profile?guid=01ca2b03a3f8a7023e4189d1f844379e46a6749c&hash=96126b23bbcba7c53a1aab40ffc3acb8886482ae', u'http://localhost:18469/api/v1/profile?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead', u'http://localhost:18469/api/v1/profile?guid=16a2aed8bbea1c9c496526e3dc79f628ddd92ca4&hash=', u'http://localhost:18469/api/v1/profile?guid=744cbd347c7b42a50200e1a23c27bc6c94e99905&hash=']
+[m[02/Feb/2016 23:53:41] "GET /explore/ HTTP/1.1" 200 9207
+[0m[36m[02/Feb/2016 23:53:41] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[0m[36m[02/Feb/2016 23:53:41] "GET /static/css/custom.css HTTP/1.1" 304 0
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:53:55
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+drwasho node 1
+drwasho node 2
+Themes
+Derrick
+Buyer
+Johnny Freetrade
+BB Bot
+Vendor
+Test Tube
+Josh Transactin
+Badge Bazzar
+Rich
+ob9jbeee48y4d9529
+[u'http://localhost:18469/api/v1/profile?guid=7280afb871b2755da6bc825a25b4bceb8e80814d&hash=6045c0a8861f514711e7b192cd01644eb34807ef', u'http://localhost:18469/api/v1/profile?guid=6b60134fdadd59a24be0402117d36d172624df0a&hash=12478f48d9d8c93719af6e71d51f18b718411952', u'http://localhost:18469/api/v1/profile?guid=d6bda55cbfc79c3b1c69ec1ca03f93aa3906e28d&hash=2ea033d4b79844f1b93c7c291ff0f05e69265bed', u'http://localhost:18469/api/v1/profile?guid=4d4f8c61f946f1e911a0cc8cd305cc755de309d9&hash=', u'http://localhost:18469/api/v1/profile?guid=e18d689e84cee5d7757e3cded439bcc339bac85c&hash=', u'http://localhost:18469/api/v1/profile?guid=149c350243e3d03302240342a73489be39f96568&hash=b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544', u'http://localhost:18469/api/v1/profile?guid=220304767b8b19a61ad55b74ef3786a9f4cee014&hash=3adf1c6e16ef01d6b025fccc730526677e5634f9', u'http://localhost:18469/api/v1/profile?guid=7cafb4d4063b3246e07a8b8d56695f5cc2660960&hash=d1f0b891e3f4b85032c69ec69cbe885c944d4339', u'http://localhost:18469/api/v1/profile?guid=8f13991fa48b36e04917108d092e499947284427&hash=d99a183f6886e3e50b022ff7fad374cd55cda10b', u'http://localhost:18469/api/v1/profile?guid=01ca2b03a3f8a7023e4189d1f844379e46a6749c&hash=96126b23bbcba7c53a1aab40ffc3acb8886482ae', u'http://localhost:18469/api/v1/profile?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead', u'http://localhost:18469/api/v1/profile?guid=16a2aed8bbea1c9c496526e3dc79f628ddd92ca4&hash=', u'http://localhost:18469/api/v1/profile?guid=744cbd347c7b42a50200e1a23c27bc6c94e99905&hash=']
+[m[02/Feb/2016 23:54:30] "GET /explore/ HTTP/1.1" 200 9207
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:55:38
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+drwasho node 1
+drwasho node 2
+Themes
+Derrick
+Buyer
+Johnny Freetrade
+BB Bot
+Vendor
+Test Tube
+Josh Transactin
+Badge Bazzar
+Rich
+ob9jbeee48y4d9529
+[u'http://localhost:18469/api/v1/get_image?guid=7280afb871b2755da6bc825a25b4bceb8e80814d&hash=6045c0a8861f514711e7b192cd01644eb34807ef', u'http://localhost:18469/api/v1/get_image?guid=6b60134fdadd59a24be0402117d36d172624df0a&hash=12478f48d9d8c93719af6e71d51f18b718411952', u'http://localhost:18469/api/v1/get_image?guid=d6bda55cbfc79c3b1c69ec1ca03f93aa3906e28d&hash=2ea033d4b79844f1b93c7c291ff0f05e69265bed', u'http://localhost:18469/api/v1/get_image?guid=4d4f8c61f946f1e911a0cc8cd305cc755de309d9&hash=', u'http://localhost:18469/api/v1/get_image?guid=e18d689e84cee5d7757e3cded439bcc339bac85c&hash=', u'http://localhost:18469/api/v1/get_image?guid=149c350243e3d03302240342a73489be39f96568&hash=b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544', u'http://localhost:18469/api/v1/get_image?guid=220304767b8b19a61ad55b74ef3786a9f4cee014&hash=3adf1c6e16ef01d6b025fccc730526677e5634f9', u'http://localhost:18469/api/v1/get_image?guid=7cafb4d4063b3246e07a8b8d56695f5cc2660960&hash=d1f0b891e3f4b85032c69ec69cbe885c944d4339', u'http://localhost:18469/api/v1/get_image?guid=8f13991fa48b36e04917108d092e499947284427&hash=d99a183f6886e3e50b022ff7fad374cd55cda10b', u'http://localhost:18469/api/v1/get_image?guid=01ca2b03a3f8a7023e4189d1f844379e46a6749c&hash=96126b23bbcba7c53a1aab40ffc3acb8886482ae', u'http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead', u'http://localhost:18469/api/v1/get_image?guid=16a2aed8bbea1c9c496526e3dc79f628ddd92ca4&hash=', u'http://localhost:18469/api/v1/get_image?guid=744cbd347c7b42a50200e1a23c27bc6c94e99905&hash=']
+[m[02/Feb/2016 23:55:46] "GET /explore/ HTTP/1.1" 200 9207
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:56:13
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:56:54
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:56:57
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:57:04
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:57:07
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:59:45
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:59:48
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:59:51
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:59:54
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 02, 2016 - 23:59:57
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0x104ba99b0>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 249, in raise_last_exception
+    six.reraise(*_exception)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/models.py", line 38
+    return self.name
+         ^
+IndentationError: expected an indented block
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:01:49
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:01:55
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:01:58
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:02:01
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:02:39
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:04:01
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:04:36
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:05:08
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:05:18
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:05:21
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+http://localhost:18469/api/v1/get_image?guid=7280afb871b2755da6bc825a25b4bceb8e80814d&hash=6045c0a8861f514711e7b192cd01644eb34807ef
+http://localhost:18469/api/v1/get_image?guid=6b60134fdadd59a24be0402117d36d172624df0a&hash=12478f48d9d8c93719af6e71d51f18b718411952
+http://localhost:18469/api/v1/get_image?guid=d6bda55cbfc79c3b1c69ec1ca03f93aa3906e28d&hash=2ea033d4b79844f1b93c7c291ff0f05e69265bed
+http://localhost:18469/api/v1/get_image?guid=149c350243e3d03302240342a73489be39f96568&hash=b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544
+http://localhost:18469/api/v1/get_image?guid=220304767b8b19a61ad55b74ef3786a9f4cee014&hash=3adf1c6e16ef01d6b025fccc730526677e5634f9
+http://localhost:18469/api/v1/get_image?guid=7cafb4d4063b3246e07a8b8d56695f5cc2660960&hash=d1f0b891e3f4b85032c69ec69cbe885c944d4339
+http://localhost:18469/api/v1/get_image?guid=8f13991fa48b36e04917108d092e499947284427&hash=d99a183f6886e3e50b022ff7fad374cd55cda10b
+http://localhost:18469/api/v1/get_image?guid=01ca2b03a3f8a7023e4189d1f844379e46a6749c&hash=96126b23bbcba7c53a1aab40ffc3acb8886482ae
+http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+[m[03/Feb/2016 00:05:30] "GET /explore/ HTTP/1.1" 200 9207
+[0m[36m[03/Feb/2016 00:05:30] "GET /static/css/custom.css HTTP/1.1" 304 0
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:10:52
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:10:56
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:11:00
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:11:30
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+http://localhost:18469/api/v1/get_image?guid=7280afb871b2755da6bc825a25b4bceb8e80814d&hash=6045c0a8861f514711e7b192cd01644eb34807ef
+Internal Server Error: /explore/
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 11, in index
+    get_avatars()
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 112, in get_avatars
+    node = Node.object.get(avatar_hash=avatar_hash)
+AttributeError: type object 'Node' has no attribute 'object'
+[35;1m[03/Feb/2016 00:11:34] "GET /explore/ HTTP/1.1" 500 67476
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:11:46
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+http://localhost:18469/api/v1/get_image?guid=7280afb871b2755da6bc825a25b4bceb8e80814d&hash=6045c0a8861f514711e7b192cd01644eb34807ef
+Internal Server Error: /explore/
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 11, in index
+    get_avatars()
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 115, in get_avatars
+    node.avatar.save()
+TypeError: save() takes at least 3 arguments (1 given)
+[35;1m[03/Feb/2016 00:11:50] "GET /explore/ HTTP/1.1" 500 67232
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:16:06
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:16:24
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:16:28
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:16:31
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:16:56
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:18:04
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+http://localhost:18469/api/v1/get_image?guid=7280afb871b2755da6bc825a25b4bceb8e80814d&hash=6045c0a8861f514711e7b192cd01644eb34807ef
+Internal Server Error: /explore/
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 11, in index
+    get_avatars()
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 115, in get_avatars
+    node.avatar.save(avatar_hash, response.content)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/fields/files.py", line 93, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/files/storage.py", line 63, in save
+    name = self._save(name, content)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/files/storage.py", line 252, in _save
+    for chunk in content.chunks():
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/files/base.py", line 85, in chunks
+    data = self.read(chunk_size)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/files/utils.py", line 19, in <lambda>
+    read = property(lambda self: self.file.read)
+AttributeError: 'str' object has no attribute 'read'
+[35;1m[03/Feb/2016 00:18:08] "GET /explore/ HTTP/1.1" 500 92409
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:20:02
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:20:11
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:20:15
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:20:22
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+http://localhost:18469/api/v1/get_image?guid=7280afb871b2755da6bc825a25b4bceb8e80814d&hash=6045c0a8861f514711e7b192cd01644eb34807ef
+6045c0a8861f514711e7b192cd01644eb34807ef
+http://localhost:18469/api/v1/get_image?guid=6b60134fdadd59a24be0402117d36d172624df0a&hash=12478f48d9d8c93719af6e71d51f18b718411952
+12478f48d9d8c93719af6e71d51f18b718411952
+http://localhost:18469/api/v1/get_image?guid=d6bda55cbfc79c3b1c69ec1ca03f93aa3906e28d&hash=2ea033d4b79844f1b93c7c291ff0f05e69265bed
+2ea033d4b79844f1b93c7c291ff0f05e69265bed
+http://localhost:18469/api/v1/get_image?guid=149c350243e3d03302240342a73489be39f96568&hash=b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544
+b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544
+http://localhost:18469/api/v1/get_image?guid=220304767b8b19a61ad55b74ef3786a9f4cee014&hash=3adf1c6e16ef01d6b025fccc730526677e5634f9
+3adf1c6e16ef01d6b025fccc730526677e5634f9
+http://localhost:18469/api/v1/get_image?guid=7cafb4d4063b3246e07a8b8d56695f5cc2660960&hash=d1f0b891e3f4b85032c69ec69cbe885c944d4339
+d1f0b891e3f4b85032c69ec69cbe885c944d4339
+http://localhost:18469/api/v1/get_image?guid=8f13991fa48b36e04917108d092e499947284427&hash=d99a183f6886e3e50b022ff7fad374cd55cda10b
+d99a183f6886e3e50b022ff7fad374cd55cda10b
+http://localhost:18469/api/v1/get_image?guid=01ca2b03a3f8a7023e4189d1f844379e46a6749c&hash=96126b23bbcba7c53a1aab40ffc3acb8886482ae
+96126b23bbcba7c53a1aab40ffc3acb8886482ae
+http://localhost:18469/api/v1/get_image?guid=a27f282d4a14db95ed0736439696792159eb0890&hash=f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+[m[03/Feb/2016 00:20:26] "GET /explore/ HTTP/1.1" 200 9207
+[0m[36m[03/Feb/2016 00:20:26] "GET /static/css/custom.css HTTP/1.1" 304 0
+[0m[36m[03/Feb/2016 00:20:26] "GET /static/img/3.png HTTP/1.1" 304 0
+[0m[36m[03/Feb/2016 00:20:26] "GET /static/img/1.png HTTP/1.1" 304 0
+[0m[36m[03/Feb/2016 00:20:26] "GET /static/img/2.png HTTP/1.1" 304 0
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:20:42
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+6045c0a8861f514711e7b192cd01644eb34807ef
+12478f48d9d8c93719af6e71d51f18b718411952
+2ea033d4b79844f1b93c7c291ff0f05e69265bed
+b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544
+3adf1c6e16ef01d6b025fccc730526677e5634f9
+d1f0b891e3f4b85032c69ec69cbe885c944d4339
+d99a183f6886e3e50b022ff7fad374cd55cda10b
+96126b23bbcba7c53a1aab40ffc3acb8886482ae
+f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+[m[03/Feb/2016 00:20:45] "GET /explore/ HTTP/1.1" 200 9207
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:21:02
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:21:06
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:21:36
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:22:10
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+6045c0a8861f514711e7b192cd01644eb34807ef
+Internal Server Error: /explore/
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 11, in index
+    get_avatars()
+  File "/Users/daniel/repos/openbazaar/archive/browser/tasks.py", line 116, in get_avatars
+    node.avatar.save(avatar_hash, response.raw)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/db/models/fields/files.py", line 106, in save
+    self._size = content.size
+AttributeError: 'HTTPResponse' object has no attribute 'size'
+[35;1m[03/Feb/2016 00:22:17] "GET /explore/ HTTP/1.1" 500 71521
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:22:50
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:26:11
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:26:36
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:26:55
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:27:04
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+6045c0a8861f514711e7b192cd01644eb34807ef
+12478f48d9d8c93719af6e71d51f18b718411952
+2ea033d4b79844f1b93c7c291ff0f05e69265bed
+b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544
+3adf1c6e16ef01d6b025fccc730526677e5634f9
+d1f0b891e3f4b85032c69ec69cbe885c944d4339
+d99a183f6886e3e50b022ff7fad374cd55cda10b
+96126b23bbcba7c53a1aab40ffc3acb8886482ae
+f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+[m[03/Feb/2016 00:27:09] "GET /explore/ HTTP/1.1" 200 9207
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:29:44
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 00:29:53
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+6045c0a8861f514711e7b192cd01644eb34807ef
+12478f48d9d8c93719af6e71d51f18b718411952
+2ea033d4b79844f1b93c7c291ff0f05e69265bed
+b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544
+3adf1c6e16ef01d6b025fccc730526677e5634f9
+d1f0b891e3f4b85032c69ec69cbe885c944d4339
+d99a183f6886e3e50b022ff7fad374cd55cda10b
+96126b23bbcba7c53a1aab40ffc3acb8886482ae
+f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+[m[03/Feb/2016 00:30:26] "GET /explore/ HTTP/1.1" 200 9207
+[0m[36m[03/Feb/2016 00:30:26] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[0m[36m[03/Feb/2016 00:30:26] "GET /static/css/custom.css HTTP/1.1" 304 0
+[0m[36m[03/Feb/2016 00:30:26] "GET /static/img/3.png HTTP/1.1" 304 0
+[0m[36m[03/Feb/2016 00:30:26] "GET /static/img/1.png HTTP/1.1" 304 0
+[0m[36m[03/Feb/2016 00:30:26] "GET /static/img/2.png HTTP/1.1" 304 0
+[0m6045c0a8861f514711e7b192cd01644eb34807ef
+12478f48d9d8c93719af6e71d51f18b718411952
+2ea033d4b79844f1b93c7c291ff0f05e69265bed
+b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544
+3adf1c6e16ef01d6b025fccc730526677e5634f9
+d1f0b891e3f4b85032c69ec69cbe885c944d4339
+d99a183f6886e3e50b022ff7fad374cd55cda10b
+96126b23bbcba7c53a1aab40ffc3acb8886482ae
+f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+[m[03/Feb/2016 00:30:47] "GET /explore/ HTTP/1.1" 200 9207
+[0m6045c0a8861f514711e7b192cd01644eb34807ef
+12478f48d9d8c93719af6e71d51f18b718411952
+2ea033d4b79844f1b93c7c291ff0f05e69265bed
+b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544
+3adf1c6e16ef01d6b025fccc730526677e5634f9
+d1f0b891e3f4b85032c69ec69cbe885c944d4339
+d99a183f6886e3e50b022ff7fad374cd55cda10b
+96126b23bbcba7c53a1aab40ffc3acb8886482ae
+f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+[m[03/Feb/2016 10:16:37] "GET /explore/ HTTP/1.1" 200 9207
+[0m[36m[03/Feb/2016 10:16:37] "GET /static/css/custom.css HTTP/1.1" 304 0
+[0m[36m[03/Feb/2016 10:16:37] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[0m[36m[03/Feb/2016 10:16:37] "GET /static/img/3.png HTTP/1.1" 304 0
+[0m[36m[03/Feb/2016 10:16:37] "GET /static/img/1.png HTTP/1.1" 304 0
+[0m[36m[03/Feb/2016 10:16:37] "GET /static/img/2.png HTTP/1.1" 304 0
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:17:33
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+6045c0a8861f514711e7b192cd01644eb34807ef
+12478f48d9d8c93719af6e71d51f18b718411952
+2ea033d4b79844f1b93c7c291ff0f05e69265bed
+b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544
+3adf1c6e16ef01d6b025fccc730526677e5634f9
+d1f0b891e3f4b85032c69ec69cbe885c944d4339
+d99a183f6886e3e50b022ff7fad374cd55cda10b
+96126b23bbcba7c53a1aab40ffc3acb8886482ae
+f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+bc91cd8f444b918b4c4860b920e277fac503d5d3
+[m[03/Feb/2016 11:17:57] "GET /explore/ HTTP/1.1" 200 9104
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:31:42
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+6045c0a8861f514711e7b192cd01644eb34807ef
+12478f48d9d8c93719af6e71d51f18b718411952
+2ea033d4b79844f1b93c7c291ff0f05e69265bed
+b5086c97b12bc5bc4ae4ff0c90aebe83ead4c544
+3adf1c6e16ef01d6b025fccc730526677e5634f9
+d1f0b891e3f4b85032c69ec69cbe885c944d4339
+d99a183f6886e3e50b022ff7fad374cd55cda10b
+96126b23bbcba7c53a1aab40ffc3acb8886482ae
+f2c9db1c0cf0058f1f9833cb60077ba0a2623ead
+bc91cd8f444b918b4c4860b920e277fac503d5d3
+Internal Server Error: /explore/
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 12, in index
+    return render_to_response('vendors.html')
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/base.py", line 514, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 23: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[35;1m[03/Feb/2016 11:32:01] "GET /explore/ HTTP/1.1" 500 123958
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:32:27
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /explore/
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 12, in index
+    return render_to_response('vendors.html')
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/backends/django.py", line 97, in render
+    reraise(exc, self.backend)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/backends/django.py", line 107, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/base.py", line 988, in render
+    bit = node.render_annotated(context)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/base.py", line 955, in render_annotated
+    return self.render(context)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/loader_tags.py", line 151, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/loader_tags.py", line 148, in get_parent
+    return self.find_template(parent, context)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/loader_tags.py", line 128, in find_template
+    template_name, skip=history,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/template/engine.py", line 169, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+TemplateDoesNotExist: base_generic.html
+[35;1m[03/Feb/2016 11:32:29] "GET /explore/ HTTP/1.1" 500 119641
+[0m[m[03/Feb/2016 11:32:38] "GET /explore/ HTTP/1.1" 200 7750
+[0m[36m[03/Feb/2016 11:32:39] "GET /static/css/custom.css HTTP/1.1" 304 0
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:36:52
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:36:54
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:37:01
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:37:37
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:38:00
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051652a8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 22, in <module>
+    url(r'^$', RedirectView.as_view(url='/myapp/list/', permanent=True)),
+NameError: name 'RedirectView' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x10514f2a8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 22, in <module>
+    url(r'^$', RedirectView.as_view(url='/browser/index/', permanent=True)),
+NameError: name 'RedirectView' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051572a8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 22, in <module>
+    url(r'^$', RedirectView.as_view(url='/browser/index/', permanent=True)),
+NameError: name 'RedirectView' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051652a8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 22, in <module>
+    url(r'^$', RedirectView.as_view(url='/browser/index/', permanent=True)),
+NameError: name 'RedirectView' is not defined
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x10504f2a8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 24, in <module>
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+NameError: name 'static' is not defined
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:44:55
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[32m[03/Feb/2016 11:44:59] "GET / HTTP/1.1" 301 0
+[0mNot Found: /browser/index/
+[33m[03/Feb/2016 11:44:59] "GET /browser/index/ HTTP/1.1" 404 2284
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:45:31
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:45:35
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:45:38
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:45:41
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:45:44
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /browser/index/
+[33m[03/Feb/2016 11:45:48] "GET /browser/index/ HTTP/1.1" 404 2282
+[0mNot Found: /browser/index/
+[33m[03/Feb/2016 11:45:56] "GET /browser/index/ HTTP/1.1" 404 2282
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:46:02
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:46:13
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /browser/index/
+[33m[03/Feb/2016 11:46:16] "GET /browser/index/ HTTP/1.1" 404 2282
+[0m[m[03/Feb/2016 11:46:21] "GET /index/ HTTP/1.1" 200 7750
+[0mNot Found: /browser/index/
+[33m[03/Feb/2016 11:46:26] "GET /browser/index/ HTTP/1.1" 404 2282
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:46:35
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:46:38
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /browser/index/
+[33m[03/Feb/2016 11:46:43] "GET /browser/index/ HTTP/1.1" 404 2282
+[0m[m[03/Feb/2016 11:46:46] "GET /index/ HTTP/1.1" 200 7750
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:55:16
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:55:39
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:55:42
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:55:45
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:55:51
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x10514f2a8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 23, in <module>
+    url(r'^index/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 15
+    return render_to_response('index.html', {'images': imgs, 'media_root': MEDIA_ROOT, 'media_url': MEDIA_URL})
+                                                                                                              ^
+IndentationError: unindent does not match any outer indentation level
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051652a8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 23, in <module>
+    url(r'^index/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 15
+    return render_to_response('index.html', {'images': imgs, 'media_root': MEDIA_ROOT, 'media_url': MEDIA_URL})
+                                                                                                              ^
+IndentationError: unindent does not match any outer indentation level
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:57:33
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /index/
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 12, in index
+    nodes = Node.objects.all()
+NameError: global name 'Node' is not defined
+[35;1m[03/Feb/2016 11:57:40] "GET /index/ HTTP/1.1" 500 61818
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:58:01
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[m[03/Feb/2016 11:58:04] "GET /index/ HTTP/1.1" 200 7750
+[0mPerforming system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:58:08
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 03, 2016 - 11:58:14
+Django version 1.9.1, using settings 'archive.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x10514f2a8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 23, in <module>
+    url(r'^index/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 16
+    return render_to_response('vendors.html', {'images': imgs, 'media_root': MEDIA_ROOT, 'media_url': MEDIA_URL})
+                                                                                                                ^
+IndentationError: unindent does not match any outer indentation level
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1051652a8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 23, in <module>
+    url(r'^index/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 16
+    return render_to_response('vendors.html', {'images': imgs, 'media_root': MEDIA_ROOT, 'media_url': MEDIA_URL})
+                                                                                                                ^
+IndentationError: unindent does not match any outer indentation level
+Performing system checks...
+
+Unhandled exception in thread started by <function wrapper at 0x1050402a8>
+Traceback (most recent call last):
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 116, in inner_run
+    self.check(display_num_errors=True)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/management/base.py", line 426, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/registry.py", line 75, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 10, in check_url_config
+    return check_resolver(resolver)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/checks/urls.py", line 19, in check_resolver
+    for pattern in resolver.url_patterns:
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/archive/urls.py", line 23, in <module>
+    url(r'^index/', include('browser.urls')),
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 52, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/Users/daniel/anaconda/envs/python2/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/daniel/repos/openbazaar/archive/browser/urls.py", line 3, in <module>
+    from . import views
+  File "/Users/daniel/repos/openbazaar/archive/browser/views.py", line 16
+    return render_to_response('vendors.html', {'nodes': imgs, 'media_root': MEDIA_ROOT, 'media_url': MEDIA_URL})
+                                                                                                               ^
+IndentationError: unindent does not match any outer indentation level
+^C
